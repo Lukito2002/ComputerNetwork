@@ -9,3 +9,9 @@ Didalam folder ini berisi pembelajaran berupa:
 - LAN DAN VLAN
 - EIGRP, OSPF, DAN RIP
 - HTTP WEB SERVER
+
+Setelah anda mendolowad cisco packet tarcer , maka anda telah bisa menggunakan pembelajaran jaringan ini 
+
+Contoh program 
+![image](https://user-images.githubusercontent.com/115674966/206507233-f19c85bd-af35-4851-affb-cc28f12500ab.png)
+
