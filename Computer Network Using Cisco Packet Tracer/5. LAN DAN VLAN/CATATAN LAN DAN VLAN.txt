@@ -1,0 +1,25 @@
+LAN-> LOCAL AREA NETWORK
+VLAN-> VIRTUAL LOCAL AREA NETWORK 
+
+
+1-1005 STANDART
+1006-4096 EXTENDED
+
+
+acces- swicth ke pc
+trunk - swicth-swicth atau swicth-router
+
+
+keuntungan vlan 
+1. menjaga jaringan atau paket yang dikirim tidak semua masuk ke pc lain 
+2. ngatur traffic jadi lebih rapi  dan testruktur
+
+SSH/TELNET
+
+REMOTE PC LAIN DENGAN MENGUNAKAN JARINGAN 
+
+SHH-> SECURE SHELL -> PORT 22
+JADI LEBIH AMAN 
+TELNET ->TELECOMUNICATION NETWORK-> PORT 23
+
+ 

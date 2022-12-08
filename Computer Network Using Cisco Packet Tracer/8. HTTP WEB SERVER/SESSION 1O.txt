@@ -1,0 +1,9 @@
+-setting dns(domain namae server)
+142.251.12.01 -> google.com
+google.com -> 142.251.12.101
+
+http web server 
+web server adalah penyedia layanan dengan protocol http 
+web server juga dikenal dengan nama hhttp server menyediakan kemampuan untuk mengirimkan dokumen hyper tect kepada pe
+pengguna
+

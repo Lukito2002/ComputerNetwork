@@ -1,0 +1,170 @@
+FLSM LEBIH BOROS
+IT-10      32   ADA 22 YANG GAK KEPAKE
+OP-12      32 
+STAFF-30   32
+
+
+VLSM (VARIABLE LENGHT SUBNET MASK)
+DISESUAIKAN DENGAN RUANGAN 
+
+192.168.1.0/24
+
+IT DIV -10 PCS ->16PCS
+OP - 12 PCS  ->16
+STAFF 30 PCS ->32
+
+
+LANGKAH 1 URUTIN TERBIH DAHULU 
+STAFF 30 PCS 
+
+2^h-2>=host 
+2^5-2>=30
+30>=30 (benar)
+
+n=32-sm lama-h
+ =32-24-5
+ =3
+
+sm baru=sm lama+3
+       = 3
+
+IT DIV -10 PCS 
+
+
+2^n>=host 
+2^4>=10
+16>=10
+
+32-n= 32-4
+    = /28 yang bisa nampung 16 adress
+
+2^n>=his
+
+
+OP - 12 PCS  
+2^h-2>= host 
+2^4-2>=12
+12>=12
+
+32-n = 32-4= /28  yang bisa nampung 16 adress
+
+
+192.168.1.0
+
+-staff 32
+NA = 192.168.1.0
+BA = 192.168.1.31
+USABLE IP : 192.168.1.1-192.168.1.30
+SUBNETING : 255.255.255.224
+
+-OP 16
+NA = 192.168.1.32
+BA = 192.168.1.47
+USABLE IP : 192.168.1.33-192.168.1.46
+SUBNETING : 255.255.255.240
+
+
+IT DIV 16 
+NA = 192.168.1.48
+BA = 192.168.1.63
+USABLE IP : 192.168.1.49-192.168.1.62
+SUBNETING : 255.255.255.240
+
+
+
+
+2. 
+
+STAFF ROOM -> 68
+IT ROOM -> 27
+DESIGNER ROOM -> 33
+OPERATIONAL ROOM -> 12
+
+192.168.36.0/24
+
+LANGKAH 1 
+MENGURUTKAN 
+
+STAFF ROOM -> 68
+DESIGNER ROOM -> 33
+IT ROOM -> 27
+OPERATIONAL ROOM -> 12
+
+VLSM 
+LANGKAH 2 
+STAFF ROOM -> 68
+2^n-2>=host 
+2^7-2>=68
+126>=68(benar)
+
+32-n= 32-7 =/25 yang bisa nampung 128 adrres
+
+
+DESIGNER ROOM -> 33
+2^n-2>=host
+2^6-2>=33
+62>=33 (benar)
+
+32-n = 32-6 =/26 yang bisa nampung 64 addres
+
+IT ROOM -> 27
+2^n-2>=host
+2^5-2>=27
+30>=27 (benar)
+
+32-n = 32-5 =/27 yang bisa nampung 32 address
+
+
+OPERATIONAL ROOM -> 12
+2^n-2>=host
+2^4-2>=12
+12>=12 (benar)
+
+32-n = 32-4 =/28 yang bisa nampung 16 address
+
+
+
+
+STAFF (128)
+
+NA : 192.168.36.0 
+NB : 192.168.36.127
+USABLE IP : 192.168.36.1-192.168.35.126
+SUBNET MASK :  255.255.255.128
+
+
+DESIGNER ROOM (64)
+
+NA : 192.168.36.128 
+NB : 192.168.36.191
+USABLE IP : 192.168.36.129-192.168.35.190
+SUBNET MASK :  255.255.255.192
+
+IT ROOM (32)
+NA : 192.168.36.192 
+NB : 192.168.36.223
+USABLE IP : 192.168.36.193-192.168.35.222
+SUBNET MASK :  255.255.255.224
+
+OPERATION ROOM (16)
+NA : 192.168.36.224 
+NB : 192.168.36.239
+USABLE IP : 192.168.36.225-192.168.36.238
+SUBNET MASK :  255.255.255.240
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

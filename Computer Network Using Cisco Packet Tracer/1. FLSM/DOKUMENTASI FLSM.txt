@@ -1,0 +1,130 @@
+IP ADDRESS->UNIQUE ADRESS UTUK IDENTIFIKASI SEBUAH DEVICE
+SUBNET MASK ->/24   
+
+255.255.255.0
+ADA 32 BIT
+
+11111111.11111111.11111111.00000000
+
+2^0 = 1
+2^1 = 2
+2^2 = 4 
+2^3 = 8
+2^4 = 16
+2^5 = 32
+2^6 = 64
+2^7 = 128
+
+
+FLSM ->FIXED LENGHT SUBNETING MASK
+/24
+MAKA DI KAMAR A DAN KAMAR B KALA DI AMBIL YANG BAKAL BESAR
+
+
+192.168.0.0 /24
+KAMAR A= 60 HOST 
+KAMAR B= 25 HOST
+
+langkah 1
+2^n>= host tebesar 
+
+2^n>=30
+2^6>=64
+
+
+langkah 2
+32-n 
+
+32-6= 26   /26 pada subnet mask  yang bisa masuk 64 adress
+
+11111111.11111111.11111111.11000000
+			   2^7+2^6=128+64=192
+
+255.255.255.192
+wildcard->kebalikan subnetmask
+
+
+subnetmask : 11111111.11111111.11111111.11000000
+wildcard   : 00000000.00000000.00000000.00111111
+2^0+2^1+2^2+2^3+2^4+2^5=1+2+4+8+16+32=0.0.0.63
+
+/26
+kamar a 
+network address = 192.168.0.0 ->ip awal 
+broadcast Adress =192.168.0.63-> Ip akhir
+usable IP range = 192.168.0.1-192.168.0.62
+subnet mask = 255.255.255.192
+
+kamar b 
+network Adress =192.168.0.64
+broadcast Adress= 192.168.0.127
+usable iP Adress = 192.168.0.65-192.168.0.126
+subnetmask=255.255.255.192
+
+SOAL PERTEMUAN 1
+192.168.36.0/24. 
+
+
+The details of each room will be written below,
+•	Staff room – 58 computers
+•	IT room – 27 computers
+•	Designer room – 33 computers
+•	Operational room – 12 computers
+
+
+FLSM 
+LANGKAH 1
+2^N>= HOST TEBESAR 
+2^6>=58
+64>=58 BENAR
+
+LANGKAH 2
+32-N= 32-6
+=/26 YANG BISA NAMPUNG 64 ADRESS
+
+
+Staff room 
+NETWORK ADRESS = 192.168.36.0
+BORADCASTADRESS =192.168.36.63
+USABLE IP ADRESS = 192.168.36.1-192.168.36.62
+subnetmask=255.255.255.192
+
+
+IT room 
+NETWORK ADRESS = 192.168.36.64
+BORADCASTADRESS =192.168.36.127
+USABLE IP ADRESS = 192.168.36.65-192.168.36.126
+subnetmask=255.255.255.192
+
+
+Designer room 
+NETWORK ADRESS = 192.168.36.128
+BORADCASTADRESS =192.168.36.192
+USABLE IP ADRESS = 192.168.36.129-192.168.36.191
+subnetmask=255.255.255.192
+
+
+Operational room 
+NETWORK ADRESS = 192.168.36.192
+BORADCASTADRESS =192.168.36.255
+USABLE IP ADRESS = 192.168.36.193-192.168.36.254
+subnetmask=255.255.255.192
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
